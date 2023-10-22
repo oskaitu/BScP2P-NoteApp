@@ -1,0 +1,125 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class=SVNI Home
+                    x:Name=SVNI Home
+>
+<ScrollView>
+
+
+<FlexLayout
+    Background="#1f1f1f"
+    Spacing="18"
+    Padding="24"
+    x:Name="svniHome"
+    HeightRequest="667"
+    WidthRequest="375"
+    CornerRadius="12">
+
+        
+        <control:floatingButton floatingButton        />
+        <HorizontalStackLayout
+            Spacing="10"
+            x:Name="notes"
+            HeightRequest="240"
+            WidthRequest="330"
+            CornerRadius="0">
+            <HorizontalStackLayout
+                Background="#9dd4cf"
+                Spacing="10"
+                x:Name="note5"
+                HeightRequest="240"
+                WidthRequest="160"
+                CornerRadius="0 24 24 24"/>
+            <HorizontalStackLayout
+                Background="#62b5e5"
+                Spacing="10"
+                x:Name="note4"
+                HeightRequest="240"
+                WidthRequest="160"
+                CornerRadius="24 24 24 0"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+            Background="#e3e48d"
+            Spacing="10"
+            x:Name="note3"
+            HeightRequest="80"
+            WidthRequest="330"
+            CornerRadius="24"/>
+        <HorizontalStackLayout
+            Spacing="10"
+            x:Name="notes"
+            HeightRequest="240"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"
+            CornerRadius="0">
+            <HorizontalStackLayout
+                Background="#ddefe8"
+                Spacing="10"
+                x:Name="note1"
+                HeightRequest="240"
+                WidthRequest="160"
+                CornerRadius="0 24 24 24">
+                <Label
+                    FontAutoScalingEnabled="false"
+                    FontSize="20"
+                    Text="Eggs
+Noodles
+Carrots"
+                    x:Name="eggsNoodlesCarrots"
+                    HeightRequest="143"
+                    WidthRequest="127"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontAutoScalingEnabled="false"
+                    FontSize="20"
+                    Text="GROCERIES"
+                    x:Name="groceries"
+                    HeightRequest="24"
+                    WidthRequest="140"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Background="#a0dcff"
+                Spacing="10"
+                Padding="10"
+                x:Name="note2"
+                HeightRequest="240"
+                WidthRequest="160"
+                CornerRadius="24 24 24 0"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            Spacing="10"
+            x:Name="categories"
+            HeightRequest="40"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"
+            CornerRadius="0">
+            
+        <control:categoryChip categoryChip            />
+            
+        <control:categoryChip categoryChip            />
+            
+        <control:categoryChip categoryChip            />
+        </HorizontalStackLayout>
+        <Label
+            FontAttributes="Bold"
+            FontAutoScalingEnabled="false"
+            FontSize="64"
+            Text="PRIVATE THOUGHTS"
+            TextColor="#ffffff"
+            x:Name="privateThoughts"
+            HeightRequest="142"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"/>
+        
+        <control:menuButton menuButton        />
+
+</FlexLayout>
+
+
+</ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,44 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class=SVNI New Note Screen
+                    x:Name=SVNI New Note Screen
+>
+<ScrollView>
+
+
+<FlexLayout
+    Background="#1f1f1f"
+    x:Name="svniNewNoteScreen"
+    HeightRequest="667"
+    WidthRequest="375"
+    CornerRadius="12">
+
+        
+        <control:floatingButton floatingButton        />
+        
+        <control:menuButton menuButton        />
+        <VerticalStackLayout
+            Background="#00a3e0"
+            Spacing="0"
+            Padding="10"
+            x:Name="note1Open"
+            HeightRequest="568"
+            WidthRequest="331"
+            CornerRadius="0 24 24 24">
+            <Entry
+                x:Name="newNote"
+                HeightRequest="73"
+                WidthRequest="342"/>
+            <Editor
+                x:Name="textHere..."
+                HeightRequest="421"
+                WidthRequest="295"/>
+        </VerticalStackLayout>
+
+</FlexLayout>
+
+
+</ScrollView>
+
+
+</ContentPage>
