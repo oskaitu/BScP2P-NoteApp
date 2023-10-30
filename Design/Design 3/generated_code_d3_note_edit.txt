@@ -1,0 +1,44 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class=SVNI Note Editing ScreenPage
+                    x:Name=SVNI Note Editing Screen
+>
+<ScrollView>
+
+
+<VerticalStackLayout>
+
+        
+        <control:floatingButton floatingButton        />
+        <Border
+            StrokeShape="RoundRectangle 0 24 24 24">
+            <VerticalStackLayout
+                Background="#ddefe8"
+                Spacing="0"
+                Padding="10"
+                x:Name="note1Open"
+                HeightRequest="568"
+                WidthRequest="331">
+                <Entry
+                    x:Name="groceries"
+                    HeightRequest="73"
+                    WidthRequest="311"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+                <Editor
+                    x:Name="eggsNoodlesCarrots"
+                    HeightRequest="421"
+                    WidthRequest="295"
+                    Background="#ff000000"/>
+            </VerticalStackLayout>
+        </Border>
+        
+        <control:menuButton menuButton        />
+
+</VerticalStackLayout>
+
+
+</ScrollView>
+
+
+</ContentPage>
