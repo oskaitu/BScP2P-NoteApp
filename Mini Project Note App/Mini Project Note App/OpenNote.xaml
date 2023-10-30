@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mini_Project_Note_App.OpenNote"
+             Title="OpenNote">
+    <ScrollView>
+
+
+        <VerticalStackLayout
+            BackgroundColor="White" >
+
+
+            <HorizontalStackLayout HeightRequest="50" WidthRequest="290" Spacing="10"  >
+                <Border Stroke="White"  >
+                    
+                    
+                <ImageButton
+            HorizontalOptions="Start"
+            Background="#ffffff"
+            BorderWidth="1"
+            x:Name="component2"
+            HeightRequest="36"
+            WidthRequest="48"
+            Source="component2.png"
+                    Clicked="GoBackToHmm"/>
+                </Border>
+                <Border Stroke="White" >
+
+            <ImageButton
+            BorderWidth="1"
+            x:Name="save"
+            HeightRequest="43"
+            WidthRequest="43"
+            Source="save.png"/>
+            </Border>
+                
+            <Border Stroke="White" Margin="125,0" >
+
+            <ImageButton
+            
+            BorderWidth="1"
+            x:Name="trash"
+            HeightRequest="43"
+            WidthRequest="43"
+            Source="trash.png"/>
+            </Border>
+
+            </HorizontalStackLayout>
+
+
+            <Border Stroke="white"  WidthRequest="310">
+                
+            <Label
+            Padding="10,0,0,0"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            Text="Navy Seals"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            x:Name="navySeals"
+            HeightRequest="50"
+            WidthRequest="308"/>
+            </Border>
+
+            <Border Stroke="white" StrokeShape="RoundRectangle 0"  WidthRequest="308" >
+
+            <Editor
+            TextColor="Black"
+            x:Name="frame1"
+            HeightRequest="516"
+            WidthRequest="308"
+            Text = "What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little clever comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo."/>
+            </Border>
+
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>

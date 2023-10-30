@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mini_Project_Note_App.NewNote"
+             Title="NewNote">
+    <ScrollView>
+
+
+        <VerticalStackLayout
+            BackgroundColor="White" >
+
+
+            <HorizontalStackLayout HeightRequest="50" WidthRequest="290" Spacing="10"  >
+                <Border Stroke="White"  >
+
+
+                    <ImageButton
+            HorizontalOptions="Start"
+            Background="#ffffff"
+            BorderWidth="1"
+            x:Name="component2"
+            HeightRequest="36"
+            WidthRequest="48"
+            Source="component2.png"
+            Clicked="GoBackToHmm"        />
+                </Border>
+                <Border Stroke="White" >
+
+                    <ImageButton
+            BorderWidth="1"
+            x:Name="save"
+            HeightRequest="43"
+            WidthRequest="43"
+            Source="save.png"/>
+                </Border>
+
+                <Border Stroke="White" Margin="125,0" >
+
+                    <ImageButton
+            
+            BorderWidth="1"
+            x:Name="trash"
+            HeightRequest="43"
+            WidthRequest="43"
+            Source="trash.png"/>
+                </Border>
+
+            </HorizontalStackLayout>
+
+
+            <Border Stroke="white"  WidthRequest="310">
+
+                <Label
+            Padding="10,0,0,0"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            Text="New Note"
+            TextColor="Gray"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            x:Name="navySeals"
+            HeightRequest="50"
+            WidthRequest="308"/>
+            </Border>
+
+            <Border Stroke="white" StrokeShape="RoundRectangle 0"  WidthRequest="308" >
+
+                <Editor
+            TextColor="Black"
+            x:Name="frame1"
+            HeightRequest="516"
+            WidthRequest="308"
+            Placeholder="..."
+                   />
+            </Border>
+
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>
